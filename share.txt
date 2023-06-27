@@ -1,0 +1,10 @@
+		
+			<?php
+			
+${'url' . $product['product_id']}	= 'http://www.shoneez.com/index.php?route=product/product&product_id='.$product['product_id'];
+${'text' . $product['product_id']}	= 'Best Rock Portal Ever';
+${'image' . $product['product_id']}	= 'image/pdf_icon.png';/*$product['big_image'];*/
+?>
+<a href="http://www.facebook.com/sharer.php?s=100&p[title]=We also do cookies&p[url]=http://www.shoneez.com&p[images][0]=http://www.shoneez.com/image/cache/data/slide-1-100x100.jpg">share</a>
+		
+			<a href="<?=share_url('facebook',array('url'=>${'url' . $product['product_id']}, 'text'=>${'text' . $product['product_id']},'image'=>${'image' . $product['product_id']}))?>">Share to Facebook</a>
